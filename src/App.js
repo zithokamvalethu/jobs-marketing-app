@@ -16,11 +16,11 @@ function App() {
 
   const [people, setPeople] = useState([]);
 
-  const handleAddedChanges = (event) => {
+  const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleAdd = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const { jobName, location, position, salary } = formData;
     if (jobName && location && position && salary) {
