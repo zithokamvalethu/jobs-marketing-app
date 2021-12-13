@@ -6,7 +6,7 @@ const SignUp = () => {
     firstName: "",
     lastName: "",
     selectOption: "",
-    employed: "",
+   
   });
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -51,19 +51,9 @@ const SignUp = () => {
           </select>
         </div>
       </div>
+    
       <div>
-        <label htmlFor="employed">Employed</label>
-        <div>
-          <input
-            onChange={handleChange}
-            name="employed"
-            id="employed"
-            type="checkbox"
-          />
-        </div>
-      </div>
-      <div>
-        <Link to="/joblist">
+        <Link to="/availablejobs">
           <button type="submit">Submit</button>
         </Link>
       </div>

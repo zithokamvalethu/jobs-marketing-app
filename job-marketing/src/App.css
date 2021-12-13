@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*{
+  margin: 0.5rem;
+  padding: 0;
+background-color:cornsilk;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topnav{
   display: flex;
-  flex-direction: column;
+  height: 8vh;
+   background-color:cornsilk;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+width: 30%;
+margin-left: 40rem;
+}
+.topnav a{
+  text-decoration: none;
+  color:black;
+  margin: 0 1rem;   
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+    background-color: white;
+    padding: 0.3rem;
+}
+input[type="text"] {
+  -moz-appearance: textfield;
+    background-color: white;
+    padding: 0.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+form{
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column; 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 2px 8px white (0, 0, 0, 1); 
+  width: 500px;
+  height: 790px;
+  text-align:start;
+  font-family: monospace;
+  font-size: large;
+}
+input[type="submit"] {
+  width: 30%;
+  height:3vh;
+  padding: 0.3rem;
+  background-color: white;
+  margin-top: 0.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+ background-color: white;
+ padding: 0.7rem; 
+
 }
+select{
+  padding: 0.3rem;
+}
+.option{
+  background-color: cornsilk;
+}
+table {
+  border: 2px solid ;   
+  border-collapse: collapse;
+}
+table.list {
+  width: 100%;
+}
+select{
+background-color: white;
+padding: 0.3rem;
+}
+th {
+  border: 2px solid ;
+  text-align: left;
+  padding: 12px;
+width: 18rem;
+}
+tr:nth-child(even),
+table.list thead > tr {
+    text-decoration: none;
+  color:black;
+  background-color: gray;
+  font-size: large;
+ 
+}
+
+h1{
+   text-align: center;
+}
+.editContainer{
+ display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto
+}
+

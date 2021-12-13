@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addJob } from "../redux/actions/jobForm";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -36,8 +37,6 @@ const Form = () => {
         ></input>
         <label>Location</label>
         <input name="location" type="text" onChange={handleChange}></input>
-        <label>Position</label>
-
         <label>position</label>
         <select name="position" onChange={handleChange}>
           <option defaultValue>SELECT POSITION</option>
@@ -45,15 +44,15 @@ const Form = () => {
           <option value="senior back-end"> Senior </option>
         </select>
         <label>salary</label>
-
         <input
           onfocus="this.value=''"
           type="number"
           name="salary"
           onChange={handleChange}
         ></input>
-
-        <input type="submit"></input>
+        <Link to="/availablejobs">
+          <button type="submit">Submit</button>
+        </Link>{" "}
       </form>
     </div>
   );
