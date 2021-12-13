@@ -9,7 +9,7 @@ const JobPortfolio = () => {
 
   return (
     <div>
-      <table className="table" id="employee-list">
+      <table className="table" id="list">
         <thead>
           <tr>
             <th>Job name</th>

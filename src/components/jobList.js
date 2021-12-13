@@ -12,7 +12,7 @@ const JobList = (props) => {
     <div>
       <br />
 
-      <table className="table" id="employee-list">
+      <table className="table" id="job-list">
         <thead>
           <tr>
             <th>Job name</th>
