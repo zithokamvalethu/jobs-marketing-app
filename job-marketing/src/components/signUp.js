@@ -8,12 +8,19 @@ const SignUp = () => {
     selectOption: "",
    
   });
+   const [people, setPeople] = useState([]);
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const { firstName, lastName, selectOption } = formData;
+    if (firstName && lastName && selectOption) {
+      setPeople([...people, formData]);
+    }
+  
+
     console.log("signup", formData);
   };
   return (
@@ -40,7 +47,6 @@ const SignUp = () => {
           />
         </div>
       </div>
-      ls
       <div>
         <label>Select</label>
         <div>
@@ -51,14 +57,13 @@ const SignUp = () => {
           </select>
         </div>
       </div>
-    
+
       <div>
-        <Link to="/availablejobs">
+        <Link to="/profile">
           <button type="submit">Submit</button>
         </Link>
       </div>
     </form>
   );
 };
-
 export default SignUp;

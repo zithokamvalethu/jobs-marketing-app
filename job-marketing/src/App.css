@@ -1,22 +1,6 @@
 *{
   margin: 0.5rem;
   padding: 0;
-background-color:cornsilk;
-}
-
-.topnav{
-  display: flex;
-  height: 8vh;
-   background-color:cornsilk;
-  align-items: center;
-  justify-content: center;
-width: 30%;
-margin-left: 40rem;
-}
-.topnav a{
-  text-decoration: none;
-  color:black;
-  margin: 0 1rem;   
 }
 input[type="number"] {
   -moz-appearance: textfield;
@@ -53,51 +37,23 @@ input[type="submit"] {
   background-color: white;
   margin-top: 0.4rem;
 }
-
 input{
  background-color: white;
  padding: 0.7rem; 
 
 }
-select{
-  padding: 0.3rem;
-}
+
 .option{
   background-color: cornsilk;
 }
-table {
-  border: 2px solid ;   
-  border-collapse: collapse;
-}
-table.list {
-  width: 100%;
-}
+
 select{
 background-color: white;
 padding: 0.3rem;
 }
-th {
-  border: 2px solid ;
-  text-align: left;
-  padding: 12px;
-width: 18rem;
-}
-tr:nth-child(even),
-table.list thead > tr {
-    text-decoration: none;
-  color:black;
-  background-color: gray;
-  font-size: large;
- 
-}
+
 
 h1{
    text-align: center;
-}
-.editContainer{
- display: flex;
-  flex-direction: column;
-  width: 20%;
-  margin: auto
 }
 

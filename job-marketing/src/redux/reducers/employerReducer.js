@@ -7,7 +7,7 @@ export const employerReducer = (state = initialState, action) => {
     case "ADD_JOB":
       return {
         ...state,
-        jobs: [...state.jobs, action.payload],
+        jobs: [...state.value, action.payload],
       };
     default:
       return state;

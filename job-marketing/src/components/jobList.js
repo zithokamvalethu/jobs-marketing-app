@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 function JobList() {
   const jobs = useSelector((state) => state.employer.jobs);
+  
   return (
     <div>
       <table class="table table-striped table-dark">
@@ -21,38 +22,10 @@ function JobList() {
             {jobs.map((job) => {
               return (
                 <tr>
-                  <td>{job.jobName}</td>
-           
-                </tr>
-              );
-            })}
-          </tr>
-        <tr>
-            {jobs.map((job) => {
-              return (
-                <tr>
-                  <td>{job.position}</td>
-           
-                 
-                </tr>
-              );
-            })}
-
-            {jobs.map((job) => {
-              return (
-                <tr>
-                  <td>{job.salary}</td>
-              
-                </tr>
-              );
-            })}
-          </tr>
-          <tr>
-            {jobs.map((job) => {
-              return (
-                <tr>
-                  <td>{job.salary}</td>
-             
+                  <td>{jobs.jobName}</td>
+                  <td>{jobs.location}</td>
+                  <td>{jobs.position}</td>
+                  <td>{jobs.salary}</td>
                 </tr>
               );
             })}
