@@ -19,7 +19,7 @@ function JobList() {
         </thead>
         <tbody>
           <tr>
-            {jobs.map((job) => {
+            {jobs.map((jobs) => {
               return (
                 <tr>
                   <td>{jobs.jobName}</td>
