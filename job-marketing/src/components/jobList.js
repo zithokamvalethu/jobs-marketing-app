@@ -10,7 +10,6 @@ function JobList() {
       <table class="table table-striped table-dark">
         <thead>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">Job Name</th>
             <th scope="col">Location</th>
             <th scope="col">Available Position</th>
