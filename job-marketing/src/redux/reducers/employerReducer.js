@@ -1,5 +1,5 @@
 const initialState = {
-  jobs: [],
+  jobs: [{ jobName:"agbujmk"}],
 };
 
 export const employerReducer = (state = initialState, action) => {
