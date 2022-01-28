@@ -8,7 +8,7 @@ function Profile() {
       <table class="table table-striped table-dark">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            
             <th scope="col">Position Applied For</th>
             <th scope="col">Name</th>
             <th scope="col">Last Name</th>
