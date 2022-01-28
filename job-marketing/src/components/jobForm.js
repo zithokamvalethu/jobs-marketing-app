@@ -27,7 +27,7 @@ const Form = () => {
 
   return (
     <div>
-      <form method="POST" action="/SignUp" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <label>Job name</label>
         <input
           name="jobName"
